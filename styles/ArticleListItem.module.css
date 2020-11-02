@@ -1,0 +1,19 @@
+.container {
+  padding-inline-start: var(--padding-base);
+  padding-inline-end: var(--padding-base);
+  margin-bottom: calc(var(--padding-base) * 2);
+}
+
+.publishedAt {
+  color: #999;
+  font-size: small;
+}
+
+.title {
+  font-weight: bold;
+  font-size: large;
+}
+
+.description {
+  
+}

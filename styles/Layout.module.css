@@ -1,0 +1,32 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-width: 768px;
+  max-width: 1280px;
+  height: 100%;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+.siteTitle {
+  text-align: center;
+  padding-block-start: calc(var(--padding-base) * 3);
+  padding-block-end: calc(var(--padding-base) * 3);
+}
+
+.main {
+  flex: 1;
+}
+
+.pageTitle {
+  padding-inline-start: var(--padding-base);
+  padding-inline-end: var(--padding-base);
+}
+
+.footer {
+  padding-inline-start: var(--padding-base);
+  padding-inline-end: var(--padding-base);
+  padding-block-start: calc(var(--padding-base) * 2);
+  padding-block-end: calc(var(--padding-base) * 2);
+  text-align: center;
+}
