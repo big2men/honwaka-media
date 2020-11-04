@@ -12,6 +12,7 @@
   position: relative;
   height: 0;
   padding-block-end: calc(100% * 2 / 4);
+  overflow: hidden;
 }
 
 .siteTitle {
@@ -28,6 +29,8 @@
 .headerImage {
   position: absolute;
   object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .main {

@@ -12,9 +12,10 @@ const Component = ({ title, children }) => {
         <title>{title ? `${title} | ${siteTitle}` : siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
+        <meta name="robots" content="noindex"></meta>
       </Head>
       <header className={styles.header}>
-        <Image src="/header.jpg" width="400" height="200" className={styles.headerImage} />
+        <Image src="/header.jpg" unsized className={styles.headerImage} />
         <h1 className={styles.siteTitle}>
           <Link href="/">
             <a className={styles.headerLink}>{siteTitle}</a>

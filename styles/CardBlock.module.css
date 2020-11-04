@@ -16,7 +16,7 @@
 .image {
   width: calc(100% + var(--padding-base) * 2);
   height: 240px;
-  object-fit: cover;
+  object-fit: contain;
   margin-inline-start: calc(var(--padding-base) * -1);
   margin-inline-end: calc(var(--padding-base) * -1);
 }
