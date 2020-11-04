@@ -1,17 +1,33 @@
 .page {
   display: flex;
   flex-direction: column;
-  min-width: 768px;
+  min-width: 320px;
   max-width: 1280px;
   height: 100%;
   margin-inline-start: auto;
   margin-inline-end: auto;
 }
 
+.header {
+  position: relative;
+  height: 0;
+  padding-block-end: calc(100% * 2 / 4);
+}
+
 .siteTitle {
+  position: absolute;
+  top: 0;
+  color: white;
   text-align: center;
   padding-block-start: calc(var(--padding-base) * 3);
   padding-block-end: calc(var(--padding-base) * 3);
+  padding-inline-start: var(--padding-base);
+  padding-inline-end: var(--padding-base);
+}
+
+.headerImage {
+  position: absolute;
+  object-fit: cover;
 }
 
 .main {

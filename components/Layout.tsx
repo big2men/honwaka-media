@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Layout.module.css'
 
@@ -10,11 +11,13 @@ const Component = ({ title, children }) => {
       <Head>
         <title>{title ? `${title} | ${siteTitle}` : siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
       </Head>
-      <header>
+      <header className={styles.header}>
+        <Image src="/header.jpg" width="400" height="200" className={styles.headerImage} />
         <h1 className={styles.siteTitle}>
           <Link href="/">
-            <a>{siteTitle}</a>
+            <a className={styles.headerLink}>{siteTitle}</a>
           </Link>
         </h1>
       </header>

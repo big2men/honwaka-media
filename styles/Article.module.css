@@ -1,0 +1,16 @@
+.container {
+  padding-inline-start: var(--padding-base);
+  padding-inline-end: var(--padding-base);
+  margin-bottom: calc(var(--padding-base) * 2);
+}
+
+.information {
+  color: #999;
+  font-size: small;
+  text-align: end;
+  margin-block-end: calc(var(--padding-base) * 2);
+}
+
+.contents {
+  /* white-space: pre-wrap; */
+}

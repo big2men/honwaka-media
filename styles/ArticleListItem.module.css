@@ -1,7 +1,7 @@
 .container {
   padding-inline-start: var(--padding-base);
   padding-inline-end: var(--padding-base);
-  margin-bottom: calc(var(--padding-base) * 2);
+  margin-block-end: calc(var(--padding-base) * 2);
 }
 
 .publishedAt {
@@ -12,8 +12,11 @@
 .title {
   font-weight: bold;
   font-size: large;
+  border-inline-start: 10px solid lightgreen;
+  padding-inline-start: var(--padding-base);
+  margin-block-end: var(--padding-base);
 }
 
 .description {
-  
+  font-size: small;
 }

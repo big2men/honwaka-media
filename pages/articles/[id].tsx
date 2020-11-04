@@ -1,12 +1,12 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { PageInfo, Article } from 'schema';
 import Layout from '../../components/Layout';
-import ArticleListItem from '../../components/ArticleListItem';
+import ArticleComponent from '../../components/Article';
 
 type Props = Article
 
-const Component: React.FC<Props> = props => <Layout title="記事一覧">
-  <ArticleListItem {...props}/>
+const Component: React.FC<Props> = props => <Layout title={props.title}>
+  <ArticleComponent {...props}/>
 </Layout>
 
 export const getStaticProps: GetStaticProps<Article, { id: string }> = async ({ params }) => {
